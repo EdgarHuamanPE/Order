@@ -318,7 +318,6 @@ body{
 /* seccion burger */
 
 .Burgers{
-    border: 1px solid red;
     width: calc( 100% - 200px);
     margin-left: auto;
     margin-right: auto;
@@ -420,5 +419,61 @@ body{
 .Burgers___presentacion--drink{
     color: #FC8A06;
     font-size: 44px;
+    font-weight: 700;
+}
+
+/* seccion informes */
+.informes{  
+    
+    width: 1528px;
+    height: 659px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 150px;
+    display: flex;
+    padding-top: 67px;
+    padding-left: 56px;   
+    padding-bottom: 43px;
+}
+
+.informes__item{
+    width: 33.3%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 50px;
+}
+
+.informes__item-titulo{
+    display: flex;
+}
+
+.informes__delivery-img{
+    width: 45px;
+    height: 45px;
+    color: #03081F;
+}
+
+.informes__delivery-title{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 48px;
+    color: #03081F;
+}
+
+.informes__delivery-lista{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.informes__delivery-lista li{
+    font-size: 18px;
+    
+}
+.informes__delivery-lista span{
     font-weight: 700;
 }
