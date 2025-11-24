@@ -3,9 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarea 1 | Landing Page estatica</title>
+    <title>Restaurant Detail Page Desktop | Landing Page estatica</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="./assets/images/LOGO 1.png" alt="Logo de la web">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li class="header__menu-item">Home</li>
+                <li class="header__menu-item">Special Offers</li>
+                <li class="header__menu-item header__menu-item--btn">Restaurants</li>
+                <li class="header__menu-item">Track Order</li>
+            </ul>
+            <a href="#" class="header__login">Login/Signup</a>
+        </nav>
+    </header>
+    <main>
+        <!--seccion de presentacion-->
+        <section class="presentacion">
+             <div class="presentacion__principal">
+                    <h5 class="presentacion__titulo">I'm lovin' it!</h5>
+                    <p class="presentacion__descripcion">
+                        McDonald’s East London
+                    </p>
+                    <div class="presentacion__botones">
+                        <a href=""  class="presentacion__boton"><img src="./assets/images/Order Completed.svg" alt="" class="presentacion__boton-icon"> Minimum Order: 12 GBP</a>    
+                        <a href=""  class="presentacion__boton"><img src="./assets/images/Clock.svg" alt="" class="presentacion__boton-icon"> Delivery in 20-25 Minutes</a>
+                    </div>
+             </div>
+             <div class="presentacion__imagenes">
+                    <img src="./assets/images/Rectangle 44.png" alt="imagen secundaria hambuerguesa">
+                    <div class="presentacion__imagenes--secundaria">
+                        <img src="./assets/images/Rectangle 64.png" alt="imagen secundaria estrellas">
+                    </div>
+             </div>
+            <div class="presentacion__etiqueta">
+                <div class="presentacion__etiqueta-img">
+                    <img src="./assets/images/Clock.svg" alt="icono de reloj">
+                </div>
+                <p class="presentacion__etiqueta-descripcion">Open until 3:00 AM</p>
+            </div>
+        </section>
+
+        <!--seccion de ofertas-->
+        <section class="ofertas">
+            <div class="ofertas__presentacion">
+                <p class="ofertas__titulo">All Offers from McDonald’s East London</p>
+                <form action="" class="ofertas__form">
+                    <img src="./assets/images/Search More.svg" class="ofertas__form-imagen" alt="imagen de buscador de ofertas">
+                    <input type="text" class="ofertas__form-input" placeholder="Search from menu...">
+                </form>
+            </div>
+            <ul class="ofertas__lista">
+                <li class="ofertas__lista-item ofertas__lista-item--budge">Offers</li>
+                <li class="ofertas__lista-item">Burgers</li>
+                <li class="ofertas__lista-item">Fries</li>
+                <li class="ofertas__lista-item">Snacks</li>
+                <li class="ofertas__lista-item">Salads</li>
+                <li class="ofertas__lista-item">Cold drinks</li>
+                <li class="ofertas__lista-item">Happy Meal®</li>
+                <li class="ofertas__lista-item">Desserts</li>
+                <li class="ofertas__lista-item">Hot drinks</li>
+                <li class="ofertas__lista-item">Sauces</li>
+                <li class="ofertas__lista-item">Orbit</li>
+            </ul>
+        </section>
+
+        <section class="galeria">
+            <div class="galeria__imagen1">
+                <h6 class="galeria__imagen1-titulo">McDonald’s East London</h6>
+                <p class="galeria__imagen1-detalle">First Order Discount</p>
+            </div>
+            <div class="galeria__imagen2">
+                <h6 class="galeria__imagen2-titulo">McDonald’s East London</h6>
+                <p class="galeria__imagen2-detalle">Vegan Discount</p>
+            </div>
+            <div class="galeria__imagen3">
+                <h6 class="galeria__imagen3-titulo">McDonald’s East London</h6>
+                <p class="galeria__imagen3-detalle">Free ice Cream Offer</p>
+            </div>
+        </section>
+
+        <section class="Burgers">
+            <h2>Burgers</h2>
+            <div class="Burgers__cards">
+                <div class="Burgers__cards-detalle">
+                    <p class="Burgers__titulo">Royal Cheese Burger with extra Fries</p>
+                    <p class="Burgers__descripcion">1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium</p>
+                    <span class="Burgers__price">GBP 23.10</span> 
+                </div>
+                <div class="Burgers__cards-img">
+                    <img class="Burgers__img"  src="./assets/images/Rectangle 46.png" alt="imagenes de la galeria de ambuerguesas">
+                    <div class="Burgers__icon">
+                        <img src="./assets/images/Rectangle 47.png" alt="">
+                        <div class="Burgers__plus">
+                            <img src="./assets/images/Plus.png" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+
+        </section>
+
+
+
+    </main>
+
     
+    <script src="./script.js"></script>
 </body>
 </html>
