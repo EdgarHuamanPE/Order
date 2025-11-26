@@ -289,53 +289,86 @@ body{
     display: flex;
     justify-content: space-between;
 }
-
-.galeria__imagen1{
+.galeria__imagen{
     width: 496px;
-    height: 325px;
-    background-image: url('./assets/images/Group\ 23.png');
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+    height: 325px;  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    position: relative;
 }
 
-.galeria__imagen2{
-    width: 496px;
-    height: 325px;
-    background-image: url('./assets/images/Group\ 43.png');
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+.galeria__item{
+    margin-left: 30px;
+    margin-top: 236px;
 }
 
-.galeria__imagen3{
-    width: 496px;
-    height: 325px;
-    background-image: url('./assets/images/Group\ 44.png');
+.galeria__item-titulo{
+    font-size: 18px;
+    color:#FC8A06;
+    font-weight: 500;
+}
+
+.galeria__item-dsc{
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.galeria__dsc{
+    width: 88px;
+    height: 66px;
+    position: absolute;
+    top: 0;
+    left: 388px;
+    background-color: #03081F;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
+    text-align: center;
+    line-height: 66px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.galeria__imagen--img1{
+    background-image:linear-gradient(245.7deg, rgba(255, 255, 255, 0) 0.94%, rgba(3, 8, 31, 0.19) 51.68%, rgba(3, 8, 31, 0.89) 87.9%),
+                     url("./assets/images/Galeria1.png");
+}
+
+.galeria__imagen--img2{
+     background-image:linear-gradient(245.7deg, rgba(255, 255, 255, 0) 0.94%, rgba(3, 8, 31, 0.19) 51.68%, rgba(3, 8, 31, 0.89) 87.9%),
+                     url("./assets/images/Galeria2.png");
+}
+
+.galeria__imagen--img3{
+    background-image:linear-gradient(245.7deg, rgba(255, 255, 255, 0) 0.94%, rgba(3, 8, 31, 0.19) 51.68%, rgba(3, 8, 31, 0.89) 87.9%),
+                     url("./assets/images/Galeria3.png");
 }
 
 
 /* seccion burger */
 
-.Burgers{
+.product{
     width: calc( 100% - 200px);
     margin-left: auto;
     margin-right: auto;
     margin-top: 70px;
 }
 
-.Burgers___presentacion{
+.product___presentacion{
     font-size: 44px;
     font-weight: 700;
 }
 
-.Burgers__list{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.product__list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 20px;
 }
 
-.Burgers__cards{
+.product__cards{
     margin-top: 40px;
     display: flex;
     align-items: center;
@@ -347,44 +380,110 @@ body{
     box-shadow: 5px 5px 34px 0px rgba(0, 0, 0, 0.25);
 }
 
-.Burgers__cards-detalle{
+.product__cards-detalle{
     display: flex;
     flex-direction: column;
     row-gap: 24px;
+    width: 228px;
 }
 
-.Burgers__titulo{
+.product__titulo{
     font-size: 20px;    
     line-height: 23px;
     font-weight: 600;
 }
 
-.Burgers__descripcion{
+.product__descripcion{
     font-size: 14px;
     line-height: 25px;
     font-weight: 400px;
 }
 
-.Burgers__price{
+.product__price{
     font-size: 18px;
     font-weight: 700;
 }
 
-.Burgers__cards-img{
+.product__cards-img{
     width: 203px;
     height: 199px;
     position: relative;
+    background-position: center;
+    background-size: contain;
+
 }
 
-.Burgers__icon{
+.product__cards-img--burger1{
+     background-image: url('./assets/images/burger1.png') ;
+}
+
+.product__cards-img--burger2{
+     background-image: url('./assets/images/burger2.png') ;
+}
+.product__cards-img--burger3{
+     background-image: url('./assets/images/burger3.png') ;
+}
+.product__cards-img--burger4{
+     background-image: url('./assets/images/burger4.png') ;
+}
+.product__cards-img--burger5{
+     background-image: url('./assets/images/burger5.png') ;
+}
+.product__cards-img--burger6{
+     background-image: url('./assets/images/burger6.png') ;
+}
+
+.product__cards-img--fries1{
+    background-image: url('./assets/images/fries.png');
+}
+
+.product__cards-img--fries2{
+    background-image: url('./assets/images/fries2.png');
+}
+.product__cards-img--fries3{
+    background-image: url('./assets/images/fries3.png');
+}
+.product__cards-img--fries4{
+    background-image: url('./assets/images/fries4.png');
+}
+.product__cards-img--fries5{
+    background-image: url('./assets/images/fries5.png');
+}
+.product__cards-img--fries6{
+    background-image: url('./assets/images/fries6.png');
+}
+
+.product__cards-img--drink1{
+    background-image: url('./assets/images/drink1.png');
+}
+.product__cards-img--drink2{
+    background-image: url('./assets/images/drink2.png');
+}
+.product__cards-img--drink3{
+    background-image: url('./assets/images/drink3.png');
+}
+.product__cards-img--drink4{
+    background-image: url('./assets/images/drink4.png');
+}
+.product__cards-img--drink5{
+    background-image: url('./assets/images/drink5.png');
+}
+.product__cards-img--drink6{
+    background-image: url('./assets/images/drink6.png');
+}
+
+.product__icon{
+    width: 86px;
+    height: 81px;
     position: absolute;
     bottom: 0;
     right: 0;
-    width: 86px;
-    height: 81px;
+    background-image: url('./assets/images/Rectangle\ 47.png');
+    background-position: center;
+    background-size: cover;
 }
 
-.Burgers__plus{
+.product__plus{
     position: absolute;
     width: 86px;
     height: 81px;
@@ -395,31 +494,26 @@ body{
     align-items: center;
 }
 
-.Burgers__plus:hover{
+.product__plus:hover{
     cursor: pointer;
 }
 
 /* seccion fries */
-
-.Burgers___presentacion--Fries{
+.product___presentacion--Fries{
     color: #FC8A06;
-    font-size: 44px;
-    font-weight: 700;
 }
 
-.Burgers__fries{
+.product__fries{
     margin-top: 124px;
 }
 
 /* seccion drink */
-.Burgers__drink{
+.product__drink{
     margin-top: 120px;
 }
 
-.Burgers___presentacion--drink{
+.product___presentacion--drink{
     color: #FC8A06;
-    font-size: 44px;
-    font-weight: 700;
 }
 
 /* seccion informes */
@@ -434,15 +528,16 @@ body{
     padding-top: 67px;
     padding-left: 56px;   
     padding-bottom: 43px;
+    border: 1px solid green;
 }
 
 .informes__item{
     width: 33.3%;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
     row-gap: 50px;
+    border: 1px solid gold;
 }
 
 .informes__item-titulo{
